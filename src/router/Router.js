@@ -4,6 +4,8 @@ import Blogs from "../pages/Blogs";
 import Home from "../pages/Home/Home";
 import LogIn from "../pages/LogIn";
 import Register from "../pages/Register";
+import ServiceDetails from "../pages/ServiceDetails";
+import Services from "../pages/Services";
 
 export const router = createBrowserRouter([
     {
@@ -18,16 +20,16 @@ export const router = createBrowserRouter([
                 path:'/home',
                 element:<Home></Home>
             },
-            // {
-            //     path:'/courses',
-            //     element:<Courses></Courses>,
-            //     loader:() => fetch('https://b610-lerning-platform-server-side-blond.vercel.app/courses')
-            // },
-            // {
-            //     path:'/course/:id',
-            //     element:<CourseDetails></CourseDetails>,
-            //     loader:({params})=>fetch(`https://b610-lerning-platform-server-side-blond.vercel.app/courses/${params.id}`)
-            // },
+            {
+                path:'/services',
+                element:<Services></Services>,
+                loader:() => fetch('https://b6a11-service-review-server-side-tau.vercel.app/services')
+            },
+            {
+                path:'/services/:id',
+                element:<ServiceDetails></ServiceDetails>,
+                loader:({params})=>fetch(`https://b6a11-service-review-server-side-tau.vercel.app/services/${params.id}`)
+            },
             {
                 path:'/login',
                 element:<LogIn></LogIn>

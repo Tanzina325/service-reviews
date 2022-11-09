@@ -1,0 +1,42 @@
+[
+    {
+"title" :"Baked Parmesan Crusted Salmon",
+"image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/627540b35a9af80a3c216b91_Baked%20Parmesan%20Crusted%20Salmon.png",
+"details" :"Weeknight dinners don't have to be boring and basic. And preparing a delicious homemade meal doesn't have to mean trashing out the entire kitchen and creating even more work for yourself. This recipe is so simple your teenager could do it and it's guaranteed to take your salmon game to a new level!",
+"ingredients":"4 (7oz) Skinless Salmon fillets,¾ cup Panko bread crumbs,¾ cup Parmesan cheese, finely shredded,2 ½ tbsp. fresh Parsley, chopped,¾ tsp. Garlic powder,1 large Egg etc.",
+"cost":"$80"
+},
+{
+"title" :"Curried Shrimp and Squash",
+"image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/5e5fefbd87f28466a27ab06f_curried-shrimp-and-squash-p-800.jpeg",
+"details" :"This simple recipe for Curried Shrimp and Squash is a cinch to put together and as we approach fall it's the perfect meal for a crisp evening. After all, no flavor says fall quite like squash.",
+"ingredients":"1 Large acorn squash,3 tsp. Canola oil, divided,3 Garlic cloves, minced,2 tbsp. Thai red curry paste,1 can Light coconut milk,1 to 1½ lb. Peeled raw shrimp,Basmati rice,2 tbsp. Lime juice and etc.",
+"cost":"$90"
+},
+{
+    "title" :"Grilled Steak & Bread Salad",
+    "image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/5e5fefcdd70b880eddd42c5e_grilled-steak-and-bread-salad-p-800.jpeg",
+    "details" :"If you're on the hunt for the perfect steak flavor may we suggest this chili powder and brown sugar dry rub? This mouthwatering contrast of flavors brings any meal to life and when paired with Bread Salad it just can't be beat.",
+    "ingredients":"1-inch thick Beef Top Sirloin Steak,2 cups Cubed Multigrain Bread,1 cup Ranch Salad Dressing,3 Large Tomatoes, Cut Into 1-inch Pieces,1 Medium Cucumber, Cut Into 1-inch Pieces and etc.",
+    "cost":"$100"
+    },
+    {
+        "title" :"Flank Steak with Pickled Red Onion",
+        "image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/5f3d7c66a9862b47593f8a03_Flank%20Steak%20with%20Pickled%20Onions-p-800.png",
+        "details" :"Upgrade your Taco Tuesday! Enjoy this delicious recipe for Flank Steak with Pickled Red Onion wrapped in crisp butter lettuce leaves for a low-carb steak taco and prepare to be amazed.",
+        "ingredients":"6 tbsp. Gochujang,1 tbsp. & ½ cup Soy Sauce,3 tbsp. Mirin,2 tsp. Toasted Sesame Oil,1-inch piece Ginger, peeled and thinly sliced,2 lb. Flank Steak and etc.",
+        "cost":"$50"
+        },
+        {
+            "title" :"Chili Lime Chicken Thighs with Citrus Roasted Potatoes",
+            "image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/5e5ffb9e55adb91d613d21eb_Chili%20Lime%20Chicken%20Thighs-p-800.jpeg",
+            "details" :"Juicy dark meat with a flavorful kick of spice and tang... this simple recipe is an exciting new take on chicken thighs that the whole family will love.",
+            "ingredients":"1lb. Yukon Gold potatoes, peeled and cut into wedges,8 All-Natural chicken thighs,2 tbsp. Extra Virgin olive oil,1 cup Chicken broth,1 tbsp. Parsley, chopped and etc.",
+            "cost":"$60"},
+            {
+                "title" :"Chicken Marsala",
+                "image" : "https://uploads-ssl.webflow.com/5cad416e401a6c2d392c03db/5e5ff1b8389c7fece6f315e6_Chicken%20Marsala-p-800.png",
+                "details" :"This flavorful meal of mushrooms, prosciutto and Marsala wine over Passanante's juicy, tender, hormone and antibiotic-free chicken is the ultimate Italian food crowd-pleaser.",
+                "ingredients":"4 Boneless, skinless chicken breasts,All-purpose flour,Freshly ground pepper,8oz. Cremini or Porcini mushrooms, stemmed and halved,¼ cup Flat-leaf parsley, chopped and etc.",
+                "cost":"$60"  }]
+            
