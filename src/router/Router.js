@@ -8,6 +8,7 @@ import MyReviews from "../pages/MyReviews";
 import Register from "../pages/Register";
 import ServiceDetails from "../pages/ServiceDetails";
 import Services from "../pages/Services";
+import Update from "../pages/Update";
 import PrivateRoute from "./PrivateRoute";
 
 export const router = createBrowserRouter([
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
                 path:'/services/:id',
                 element:<ServiceDetails></ServiceDetails>,
                 loader:({params})=>fetch(`https://b6a11-service-review-server-side-tau.vercel.app/services/${params.id}`)
+            },
+            {
+                path:'/update/:id',
+                element:<Update></Update>,
+                loader:({params})=>fetch(`https://b6a11-service-review-server-side-tau.vercel.app/reviews/${params.id}`)
             },
             {
                 path:'/services/add',
