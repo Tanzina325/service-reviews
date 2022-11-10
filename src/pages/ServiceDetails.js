@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { AuthContext } from '../contexts/AuthProvider/AuthProvider';
 
 const ServiceDetails = () => {
     const serviceDetails = useLoaderData();
+    const{user} =useContext(AuthContext)
     const {image,title,details,ingredients,cost} = serviceDetails
     return (
         <div className='mx-3'>
@@ -15,6 +17,7 @@ const ServiceDetails = () => {
     <h1 ><span className='text-amber-600'>Ingredients </span>: {ingredients}</h1>
         </div>
         </div>
+        <textarea className="textarea textarea-bordered" placeholder="text"></textarea>
         </div>
     );
 };

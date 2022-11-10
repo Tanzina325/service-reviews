@@ -26,7 +26,19 @@ const Header = () => {
         <li><Link to='/'>Home</Link></li>
         
         <li><Link to='/blogs'>Blogs</Link></li>
-        <li><Link to='/login'>LogIn</Link></li>
+        
+        {
+              user?.uid ?
+              <>
+              <li><Link to='/services/add'>Add Service</Link></li>
+              <div className='ml-4'><button onClick={handleLogOut} >Logout</button></div>
+              
+              </>
+              :
+              <>
+              <li><Link to='/login'>LogIn</Link></li>
+              <li><Link to='/register'>Sign Up</Link></li>
+              </>}
       </ul>
     </div>
     <Link to='' className="btn btn-ghost normal-case text-xl">Home Food</Link>
@@ -37,10 +49,15 @@ const Header = () => {
     <li><Link to='/blogs'>Blogs</Link></li>
     {
               user?.uid ?
-              <button onClick={handleLogOut} >LogOut</button>
+              <>
+              <li><Link to='/services/add'>Add Service</Link></li>
+              <div className='my-3'><button onClick={handleLogOut} >Logout</button></div>
+              
+              </>
               :
               <>
               <li><Link to='/login'>LogIn</Link></li>
+              <li><Link to='/register'>Sign Up</Link></li>
               </>}
     
     </ul>
