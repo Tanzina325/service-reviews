@@ -31,6 +31,7 @@ const Header = () => {
               user?.uid ?
               <>
               <li><Link to='/services/add'>Add Service</Link></li>
+              <li><Link to='/myreviews'>My reviews</Link></li>
               <div className='ml-4'><button onClick={handleLogOut} >Logout</button></div>
               
               </>
@@ -51,6 +52,7 @@ const Header = () => {
               user?.uid ?
               <>
               <li><Link to='/services/add'>Add Service</Link></li>
+              <li><Link to='/myreviews'>My reviews</Link></li>
               <div className='my-3'><button onClick={handleLogOut} >Logout</button></div>
               
               </>
