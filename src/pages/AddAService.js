@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 const AddAService = () => {
-    const[service,setService]=useState({})
-    const handleAddUser =event =>{
+    const[service,setService]=useState({});
+    const handleAddService =event =>{
         event.preventDefault();
         console.log(service);
 
         fetch('https://b6a11-service-review-server-side-tau.vercel.app/services',{
         method: 'POST',
         headers:{
-            'content-type' :'applicantion/json'
+            'content-type' :'application/json'
         },
         body: JSON.stringify(service)
         })
@@ -35,7 +35,7 @@ const handleInputBlur = event =>{
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <div className="card-body">
-        <form onSubmit={handleAddUser}>
+        <form onSubmit={handleAddService}>
             <div className="form-control">
           <label className="label">
             <span className="label-text">Title of service</span>
@@ -71,7 +71,7 @@ const handleInputBlur = event =>{
           
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Add service</button>
+          <button type='submit'className="btn btn-primary">Add service</button>
         </div>   
         </form> 
         </div>

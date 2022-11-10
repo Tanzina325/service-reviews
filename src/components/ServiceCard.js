@@ -10,8 +10,8 @@ const ServiceCard = ({service}) => {
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
     {
-        details.length > 100 ?
-        <p>{details.slice(0,100)+"..."} <Link to='' className='text-amber-600 font-bold '>Read More</Link></p>
+        details.length > 10 ?
+        <p>{details.slice(0,10)+"..."} <Link to='' className='text-amber-600 font-bold '>Read More</Link></p>
         :
         <p>{details}</p>
     }

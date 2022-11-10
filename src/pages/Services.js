@@ -4,6 +4,7 @@ import ServiceCard from '../components/ServiceCard';
 
 const Services = () => {
     const services =useLoaderData()
+    console.log(services)
     return (
         <div className='mx-16 lg:mx-5  grid lg:grid-cols-3 gap-4'>
         {
