@@ -4,11 +4,13 @@ import Reviews from '../components/Reviews'
 
 
 import { AuthContext } from '../contexts/AuthProvider/AuthProvider';
+import useTitle from '../Hooks/UseTitle';
 
 const ServiceDetails = () => {
     const serviceDetails = useLoaderData();
     console.log(serviceDetails)
     const{user} =useContext(AuthContext);
+    useTitle('service details')
     // const navigate=useNavigate();
     // const location =useLocation();
     

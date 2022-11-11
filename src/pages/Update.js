@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import useTitle from '../Hooks/UseTitle';
 
 
 const Update = () => {
@@ -7,6 +8,7 @@ const Update = () => {
     console.log(router)
     const {id} =router
     const [review,setReview]=useState({});
+    useTitle('Update')
     useEffect(()=>{
       fetch(`https://b6a11-service-review-server-side-tau.vercel.app/reviews/${id}`)
       .then(res=>res.json())

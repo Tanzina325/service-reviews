@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../Hooks/UseTitle';
 import HomeSectionOne from './HomeSectionOne';
 import HomeSectionTwo from './HomeSectionTwo';
 import HomeServices from './HomeServices';
 
 const Home = () => {
+    useTitle('home')
     return (
         <div className='mx-5' >
          <div className='text-center'><button className="rounded-full px-12 my-3 text-amber-600 font-bold text-xl py-3 bg-slate-600">Provided service in All Metro cities</button></div>
