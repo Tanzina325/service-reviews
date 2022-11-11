@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HomeSectionOne from './HomeSectionOne';
+import HomeSectionTwo from './HomeSectionTwo';
 import HomeServices from './HomeServices';
 
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
        </div>
        <HomeServices></HomeServices>
        <div className='text-center my-10'><Link to='/services'><button className="btn btn-warning">See All Services</button></Link></div>
-       <HomeSectionOne></HomeSectionOne>  
+       <HomeSectionOne></HomeSectionOne>
+       <HomeSectionTwo></HomeSectionTwo>  
         </div>
     );
 };
