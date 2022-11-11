@@ -35,9 +35,9 @@ export const router = createBrowserRouter([
                 loader:({params})=>fetch(`https://b6a11-service-review-server-side-tau.vercel.app/services/${params.id}`)
             },
             {
-                path:'/update/:id',
-                element:<Update></Update>,
-                loader:({params})=>fetch(`https://b6a11-service-review-server-side-tau.vercel.app/reviews/${params.id}`)
+                path:'myreviews/update/:id',
+                element:<PrivateRoute><Update></Update></PrivateRoute>
+                
             },
             {
                 path:'/services/add',

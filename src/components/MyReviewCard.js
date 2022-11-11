@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const MyReviewCard = ({review,handleDelete}) => {
     const{_id,name,photo,message}=review;
@@ -12,7 +13,7 @@ return (
     </div>
     <p>{message}</p>
     <div className='flex justify-between'>
-        <button  className="btn btn-primary">update</button>
+        <Link to={`update/${_id}`}><button  className="btn btn-primary">update</button></Link>
         <button onClick={()=>handleDelete(_id)} className="btn btn-primary">Delete</button>
     </div>
   </div>
