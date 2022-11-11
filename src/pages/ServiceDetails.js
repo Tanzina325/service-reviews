@@ -26,6 +26,7 @@ const ServiceDetails = () => {
         const message = form.message.value;
         form.reset()
         const addReview ={
+        service:title,
         reviewId : _id,
         name:`${user?.displayName}`,
         email:`${user?.email}`,
@@ -42,7 +43,13 @@ const ServiceDetails = () => {
         body: JSON.stringify(addReview)
         })
       .then(res=>res.json())
-      .then(data=>console.log(data))
+      .then(data=>
+        console.log(data)
+//         if(data.deletedCount > 0){
+//           alert('deleted successfully');
+// const remaining= reviews.filter(rev=>rev._id !== id);
+// setReviews(remaining)}
+      )
     }
     // const submitReview=(id)=>{
     //   user?.email ? <form onSubmit={reviewAdded}>

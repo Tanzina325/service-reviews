@@ -3,11 +3,15 @@ import ReviewCard from './ReviewCard'
 
 const Reviews = ({id}) => {
     const [reviews,setReviews] =useState([]);
+    const[refresh,setRefresh] =useState(false)
         useEffect(()=>{
             fetch(`https://b6a11-service-review-server-side-tau.vercel.app/reviews?reviewId=${id}`)
             .then(res=>res.json())
-            .then(data=>setReviews(data))
-            },[id])
+            .then(data=>{
+                setReviews(data)
+                setRefresh(!refresh)
+            })
+            },[id,refresh])
     return (
         
         <div>
