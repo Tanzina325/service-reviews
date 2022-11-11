@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Reviews from '../components/Reviews'
 
 
@@ -42,6 +42,10 @@ const ServiceDetails = () => {
       .then(res=>res.json())
       .then(data=>console.log(data))
     }
+    // const submitReview=(id)=>{
+    //   user?.email ? <form onSubmit={reviewAdded}>
+    //   <textarea name='message'className="textarea textarea-bordered my-5" placeholder="Your review"></textarea></form>
+    //    :<Link><button>Please login</button></Link>}
     
     return (
         <div className='mx-3'>
@@ -55,20 +59,15 @@ const ServiceDetails = () => {
         </div>
         </div>
         <Reviews id={_id}></Reviews>
-        <form onSubmit={reviewAdded}>
-        <textarea name='message'className="textarea textarea-bordered my-5" placeholder="Your review"></textarea>
-        
-        <div className="form-control mt-6">
-          <button className="btn btn-primary">add review
+        {user?.email ? <form onSubmit={reviewAdded}>
+      <textarea name='message'className="textarea textarea-bordered my-5" placeholder="Your review"></textarea>
+      <div className="form-control mt-6">
+          <button  className="btn btn-primary">add review
         
           </button>
         </div>
-        
-    
-        </form>
-        
-        
-        
+      </form>
+       :<Link to='/login'><div className='text-center'><button className='btn btn-primary  p-5'>Please login to add a review</button></div></Link>}
         </div>
     );
 };

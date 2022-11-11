@@ -37,7 +37,7 @@ const Blogs = () => {
   How does NodeJS handle multiple requests at the same time?
   </div>
   <div className="collapse-content"> 
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+    <p>The event-driven model is very efficient and allows NodeJS to handle thousands of concurrent requests with ease.Node.js uses two concepts by Non-blocking I/O and asyncronus .</p>
   </div>
 </div>
         </div>
