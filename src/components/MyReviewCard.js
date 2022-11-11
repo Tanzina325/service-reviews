@@ -5,7 +5,7 @@ const MyReviewCard = ({review,handleDelete}) => {
     const{_id,name,photo,message}=review;
 return (
         <div>
-           <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 bg-base-100 shadow-xl">
   <div className="card-body">
     <div className='flex justify-evenly items-center'>
     <h2 className="card-title">{name}</h2>
@@ -18,6 +18,7 @@ return (
     </div>
   </div>
 </div>
+
         </div>
     );
 };
