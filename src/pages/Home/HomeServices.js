@@ -9,7 +9,7 @@ fetch('https://b6a11-service-review-server-side-tau.vercel.app/threeservices')
 .then(data=>setServices(data))
     },[])
     return (
-        <div className=' mx-auto grid lg:grid-cols-3 gap-4'>
+        <div className=' mx-auto grid lg:grid-cols-3 my-24 gap-4'>
          {
             services.map(service=><ServiceCard key={service._id} service={service}></ServiceCard>)
          } 
